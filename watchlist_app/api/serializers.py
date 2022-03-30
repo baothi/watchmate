@@ -10,15 +10,10 @@ class StreamPlatformSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 class WatchListSerializer(serializers.ModelSerializer):
-    # review_user = serializers.StringRelatedField(read_only=True)
-    # len_name = serializers.SerializerMethodField()
 
     class Meta:
         model = WatchList
-        # exclude = ('watchlist',)
         fields = "__all__"
-        # fields = ['id','name','description']
-        # exclude = ['name']
     
     # def get_len_name(self, object):
     #     length = len(object.name)
